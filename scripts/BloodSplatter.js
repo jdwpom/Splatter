@@ -372,6 +372,8 @@ export class BloodSplatter {
       await canvas.scene.createEmbeddedDocuments("Tile", [{
         texture: {
           src: f.path,
+          anchorX: 0,
+          anchorY: 0
         },
         elevation: bloodContainer.elevation,
         flags: {
